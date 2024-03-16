@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: black;
+}
+
+
+.lightdark {
+    background-color: #0c0c0e;
+}
+
+h1,h2,h3,h4,h5,h6,button,span,a {
+    color:white;
+}
