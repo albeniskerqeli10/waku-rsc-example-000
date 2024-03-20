@@ -33,7 +33,7 @@ export const getConfig = async () => {
 const getData = async () => {
   const data = {
     description: 'An internet website!',
-    icon: '/images/favicon.png',
+    icon: '/images/shoppingfavicon.png',
   };
 
   return data;

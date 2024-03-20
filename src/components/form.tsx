@@ -6,7 +6,7 @@ const Form = () => {
 
 
     return(
-        <form className="w-[360px]  bg-[#1b1b1d] min-h-[400px] flex items-center flex-col justify-center gap-7 px-3 py-4 flex-wrap shadow-lg  border border-neutral-800 rounded-sm" >
+        <form  className="w-[360px]  bg-[#1b1b1d] min-h-[400px] flex items-center flex-col justify-center gap-7 px-3 py-4 flex-wrap shadow-lg  border border-neutral-800 rounded-sm" >
             {/*[border-color:rgb(27, 27, 29)]  */}
 <h1 className="font-bold">Login</h1>
 <label className="w-full flex flex-col flex-wrap gap-2.5 ">

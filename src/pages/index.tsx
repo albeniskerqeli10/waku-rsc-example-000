@@ -37,7 +37,7 @@ export default async function HomePage() {
    <CustomLink key={product.id} prefetch={true} className='w-[400px] min-h-[400px]'  to={`/product/${product.id}`} itemId={product.id}>
     <div className='w-full bg-neutral-950 h-full flex items-center flex-col flex-wrap rounded-sm text-white shadow-lg border border-neutral-900'>
       {/*' gap-3 '*/}
-      <img loading="lazy"  src={product.images[0]} className='w-[400px] h-[350px] object-cover object-center'/>
+      <img loading={products[0].id === product.id ? "eager" :'lazy'} fetchPriority={products[0].id === product.id ? "high" :'low'}   src={product.images[0]} className='w-[400px] h-[350px] object-cover object-center'/>
       {/*onError={(e:any) => {
         e.target.src= "https://fakeimg.pl/600x400/0f0e0e/ffffff?text=Image&font=noto"
       }}*/}
