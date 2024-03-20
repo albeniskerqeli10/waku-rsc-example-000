@@ -1,9 +1,8 @@
 import '../styles.css';
-
 import type { ReactNode } from 'react';
 
 import { Header } from '../components/header.js';
-import { Footer } from '../components/footer.js';
+// import { Footer } from '../components/footer.js';
 
 type RootLayoutProps = { children: ReactNode };
 
@@ -11,14 +10,15 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const data = await getData();
 
   return (
-    <div className="font-['Nunito']">
+    <div className="font-['Nunito'] min-h-[100vh] flex flex-col pb-2">
       <meta property="description" content={data.description} />
       <link rel="icon" type="image/png" href={data.icon} />
+      <title>SlickStore</title>
       <Header />
-      <main className="flex min-h-svh items-center justify-center *:min-h-64 *:min-w-64">
+      <main className="flex flex-1 border-none border-red-500  items-center justify-center *:min-h-64 *:min-w-64">
         {children}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
